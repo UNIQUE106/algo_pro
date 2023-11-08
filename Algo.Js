@@ -30,6 +30,19 @@ for (let i = 0; i < sentence.length; i++) {
 sentenceLength--;
 
 // Output the results
+
+const len = document.getElementById("len");
+const numW = document.getElementById("numW");
+const numV = document.getElementById("numV");
+
+len.innerHTML = "Sentence Length: " + sentenceLength;
+numW.innerHTML = "Number of Words: " + wordCount + 1;
+numV.innerHTML = "Number of Vowels: " + vowelCount;
+
+
+
+
+
 console.log("Sentence Length:", sentenceLength);
 console.log("Number of Words:", wordCount + 1);  // Add 1 to include the last word
 console.log("Number of Vowels:", vowelCount);
